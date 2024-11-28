@@ -1,0 +1,244 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+  <script type="text/javascript">
+    window.tailwind.config = {
+      darkMode: ['class'],
+      theme: {
+        extend: {
+          colors: {
+            border: 'hsl(var(--border))',
+            input: 'hsl(var(--input))',
+            ring: 'hsl(var(--ring))',
+            background: 'hsl(var(--background))',
+            foreground: 'hsl(var(--foreground))',
+            primary: {
+              DEFAULT: 'hsl(var(--primary))',
+              foreground: 'hsl(var(--primary-foreground))'
+            },
+            secondary: {
+              DEFAULT: 'hsl(var(--secondary))',
+              foreground: 'hsl(var(--secondary-foreground))'
+            },
+            destructive: {
+              DEFAULT: 'hsl(var(--destructive))',
+              foreground: 'hsl(var(--destructive-foreground))'
+            },
+            muted: {
+              DEFAULT: 'hsl(var(--muted))',
+              foreground: 'hsl(var(--muted-foreground))'
+            },
+            accent: {
+              DEFAULT: 'hsl(var(--accent))',
+              foreground: 'hsl(var(--accent-foreground))'
+            },
+            popover: {
+              DEFAULT: 'hsl(var(--popover))',
+              foreground: 'hsl(var(--popover-foreground))'
+            },
+            card: {
+              DEFAULT: 'hsl(var(--card))',
+              foreground: 'hsl(var(--card-foreground))'
+            },
+          },
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 222.2 84% 4.9%;
+--card: 0 0% 100%;
+--card-foreground: 222.2 84% 4.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 222.2 84% 4.9%;
+--primary: 221.2 83.2% 53.3%;
+--primary-foreground: 210 40% 98%;
+--secondary: 210 40% 96.1%;
+--secondary-foreground: 222.2 47.4% 11.2%;
+--muted: 210 40% 96.1%;
+--muted-foreground: 215.4 16.3% 46.9%;
+--accent: 210 40% 96.1%;
+--accent-foreground: 222.2 47.4% 11.2%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 210 40% 98%;
+--border: 214.3 31.8% 91.4%;
+--input: 214.3 31.8% 91.4%;
+--ring: 221.2 83.2% 53.3%;
+				}
+				.dark {
+					--background: 222.2 84% 4.9%;
+--foreground: 210 40% 98%;
+--card: 222.2 84% 4.9%;
+--card-foreground: 210 40% 98%;
+--popover: 222.2 84% 4.9%;
+--popover-foreground: 210 40% 98%;
+--primary: 217.2 91.2% 59.8%;
+--primary-foreground: 222.2 47.4% 11.2%;
+--secondary: 217.2 32.6% 17.5%;
+--secondary-foreground: 210 40% 98%;
+--muted: 217.2 32.6% 17.5%;
+--muted-foreground: 215 20.2% 65.1%;
+--accent: 217.2 32.6% 17.5%;
+--accent-foreground: 210 40% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 210 40% 98%;
+--border: 217.2 32.6% 17.5%;
+--input: 217.2 32.6% 17.5%;
+--ring: 224.3 76.3% 48%;
+				}
+			}
+		</style>
+</head>
+
+  <body class="bg-background text-foreground">
+
+    <header class="flex justify-between items-center p-6 border-b border-border">
+      <div class="flex items-center">
+        <img src="./LOGO DE LA EMPRESA.png" alt="Logo de la empresa" width="80px"/>
+        <nav class="ml-6 space-x-4">
+          <a href="#services" class="hover:text-primary">Servicios</a>
+          <a href="#how-it-works" class="hover:text-primary">Cómo Funciona</a>
+          <a href="#testimonials" class="hover:text-primary">Testimonios</a>
+          <a href="#contact" class="hover:text-primary">Contáctanos</a>
+        </nav>
+      </div>
+      
+    </header>
+
+    <section class="text-center py-20 bg-accent text-accent-foreground">
+      <img src="https://placehold.co/1200x400" alt="Mercaderistas trabajando en el punto de venta"
+        class="mx-auto mb-8" />
+      <h1 class="text-4xl font-bold mb-4">Potencia tu Marca con Mercaderistas Profesionales</h1>
+      <p class="text-lg mb-6">Maximiza tus ventas y mejora la visibilidad de tus productos con un equipo de
+        mercaderistas expertos.</p>
+      
+    </section>
+
+    <section id="services" class="py-20">
+      <h2 class="text-3xl font-bold text-center mb-10">¿Qué Hacemos?</h2>
+      <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-card p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3">Promoción en el Punto de Venta</h3>
+          <p class="text-muted-foreground">Nuestros mercaderistas aseguran que tu producto esté bien posicionado en
+            tiendas clave.</p>
+        </div>
+        <div class="bg-card p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3">Capacitación de Mercaderistas</h3>
+          <p class="text-muted-foreground">Preparamos a tu equipo para maximizar las oportunidades de ventas.</p>
+        </div>
+        <div class="bg-card p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3">Gestión de Inventarios</h3>
+          <p class="text-muted-foreground">Nuestros mercaderistas realizan auditorías y optimizan los inventarios de tus
+            productos.</p>
+        </div>
+        <div class="bg-card p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3">Manejo de Exhibiciones</h3>
+          <p class="text-muted-foreground">Creamos y mantenemos exhibiciones llamativas que captan la atención de los
+            consumidores.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="py-20 bg-secondary text-secondary-foreground">
+      <h2 class="text-3xl font-bold text-center mb-10">Así Funciona Nuestro Servicio</h2>
+      <div class="max-w-3xl mx-auto">
+        <ol class="list-decimal pl-6 space-y-4">
+          <li><strong>Paso 1:</strong> Define tus objetivos publicitarios con nuestro equipo.</li>
+          <li><strong>Paso 2:</strong> Asignamos mercaderistas especializados para tu marca.</li>
+          <li><strong>Paso 3:</strong> Monitoreamos el rendimiento y ajustamos las estrategias según los resultados.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-20">
+      <h2 class="text-3xl font-bold text-center mb-10">Lo que Dicen Nuestros Clientes</h2>
+      <div class="max-w-3xl mx-auto space-y-8">
+        <blockquote class="bg-card p-6 rounded-lg shadow-md">
+          <p class="text-muted-foreground">"Desde que trabajamos con estos mercaderistas, nuestras ventas han
+            incrementado un 30% en tiendas clave. ¡Altamente recomendados!"</p>
+          <footer class="mt-4 text-right">- Empresa XYZ</footer>
+        </blockquote>
+        <blockquote class="bg-card p-6 rounded-lg shadow-md">
+          <p class="text-muted-foreground">"El equipo de mercaderistas ha transformado la forma en que nuestros
+            productos son percibidos por los consumidores."</p>
+          <footer class="mt-4 text-right">- Empresa ABC</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <div class="text-center py-10 bg-primary text-primary-foreground">
+      <button class="py-3 px-6 rounded-lg bg-accent text-accent-foreground hover:bg-accent/80">
+        Solicita tu Consultoría Gratis
+      </button>
+    </div>
+
+    <div class="fixed bottom-4 right-4">
+      <button id="chatbot" class="bg-secondary text-secondary-foreground p-4 rounded-full shadow-lg">
+        💬
+      </button>
+      <div id="chatbot-window" class="hidden bg-card border border-border p-4 rounded-lg shadow-lg w-80">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="font-bold">Asistente Virtual</h3>
+          <button id="close-chatbot" class="text-muted-foreground">✖</button>
+        </div>
+        <div class="space-y-4">
+          <p>¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</p>
+          <input type="text" class="w-full p-2 border border-input rounded-lg" placeholder="Escribe tu pregunta..." />
+          <button class="bg-primary text-primary-foreground py-2 px-4 rounded-lg hover:bg-primary/80">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact" class="py-20">
+      <h2 class="text-3xl font-bold text-center mb-10">¿Listo para transformar tu marca? ¡Contáctanos!</h2>
+      <form class="max-w-lg mx-auto space-y-6">
+        <input type="text" class="w-full p-3 border border-input rounded-lg" placeholder="Nombre" required />
+        <input type="email" class="w-full p-3 border border-input rounded-lg" placeholder="Correo Electrónico"
+          required />
+        <input type="tel" class="w-full p-3 border border-input rounded-lg" placeholder="Teléfono" required />
+        <textarea class="w-full p-3 border border-input rounded-lg" placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit" class="bg-primary text-primary-foreground py-3 px-6 rounded-lg hover:bg-primary/80">Enviar
+          Solicitud</button>
+      </form>
+    </section>
+
+    <footer class="bg-muted text-muted-foreground py-6">
+      <div class="max-w-4xl mx-auto flex justify-between items-center">
+        <div>
+          <p>Dirección: Calle Falsa 123</p>
+          <p>Teléfono: +123 456 789</p>
+          <p>Email: contacto@empresa.com</p>
+        </div>
+        <div class="space-x-4">
+          <a href="#" class="hover:text-primary">Facebook</a>
+          <a href="#" class="hover:text-primary">Twitter</a>
+          <a href="#" class="hover:text-primary">LinkedIn</a>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="./terminosAndCodiciones.html" class="hover:text-primary">Términos de servicio</a>
+      </div>
+    </footer>
+    <script>
+      const chatbotButton = document.getElementById('chatbot');
+      const chatbotWindow = document.getElementById('chatbot-window');
+      const closeChatbot = document.getElementById('close-chatbot');
+      chatbotButton.addEventListener('click', () => {
+        chatbotWindow.classList.toggle('hidden');
+      });
+      closeChatbot.addEventListener('click', () => {
+        chatbotWindow.classList.add('hidden');
+      });
+    </script>
+  </body>
+
+
+</html>
